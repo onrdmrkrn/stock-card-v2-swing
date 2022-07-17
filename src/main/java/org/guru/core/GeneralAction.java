@@ -8,7 +8,6 @@ import java.awt.event.ActionListener;
 public class GeneralAction implements ActionListener {
 
     private Command command;
-
     public GeneralAction(Command command) {
         this.command = command;
     }

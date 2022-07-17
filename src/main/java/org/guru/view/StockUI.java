@@ -68,7 +68,7 @@ public class StockUI extends JPanel {
 	public JButton findButton = new JButton("Find");
 
 	public JButton deleteButton = new JButton("Delete");
-	
+
 
 	public StockUI(){
 		initPanel();

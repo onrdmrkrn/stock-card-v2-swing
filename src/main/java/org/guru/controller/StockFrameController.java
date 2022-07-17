@@ -18,7 +18,6 @@ public class StockFrameController {
     public StockFrameController() {
     }
 
-
     public void execute() {
 
         MainWindow mainWindow = new MainWindow();

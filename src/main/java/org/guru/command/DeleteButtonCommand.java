@@ -15,7 +15,6 @@ public class DeleteButtonCommand implements Command {
     @Override
     public void execute() {
         Stock stock = new Stock();
-        JOptionPane.showMessageDialog(null,"Ürünü silmek istediğinizden emin misiniz?");
         stock.setStockId(stockUI.getStockId());
         stock.deleteSqlSentence();
         stockUI.clear();

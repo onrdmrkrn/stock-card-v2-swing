@@ -17,7 +17,8 @@ public class DeleteButtonCommand implements Command {
         Stock stock = new Stock();
         JOptionPane.showMessageDialog(null,"Ürünü silmek istediğinizden emin misiniz?");
         stock.setStockId(stockUI.getStockId());
-        stock.deleteSqlSentence(stock);
+        stock.deleteSqlSentence();
+        stockUI.clear();
         JOptionPane.showMessageDialog(null,stock.getStockId()+" deleted.");
 
 

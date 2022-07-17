@@ -11,6 +11,19 @@ import java.text.SimpleDateFormat;
 
 public class StockUI extends JPanel {
 
+
+	public void clear() {
+		idField.setText("");
+		barcodeField.setText("");
+		nameField.setText("");
+		descriptionArea.setText("");
+		typeBox.setSelectedIndex(0);
+		unitBox.setSelectedIndex(0);
+		kdvBox.setSelectedIndex(0);
+		priceField.setText("");
+		chooseDate.setDate(null);
+		codeField.setText("");
+	}
 	private static StockUI stockUI;
 	public static StockUI getInstance (){
 		if (stockUI == null){
@@ -18,7 +31,7 @@ public class StockUI extends JPanel {
 		}
 		return stockUI;
 	}
-	public JLabel idLabel = new JLabel("Stock ID:", JLabel.LEFT);
+	JLabel idLabel = new JLabel("Stock ID:", JLabel.LEFT);
 	public JTextField idField = new JTextField();
 	public JLabel codeLabel = new JLabel("Stock Code:", JLabel.LEFT);
 	public JTextField codeField = new JTextField();
@@ -55,8 +68,7 @@ public class StockUI extends JPanel {
 	public JButton findButton = new JButton("Find");
 
 	public JButton deleteButton = new JButton("Delete");
-
-	public JButton clearButton = new JButton("Clear");
+	
 
 	public StockUI(){
 		initPanel();
@@ -122,7 +134,6 @@ public class StockUI extends JPanel {
 		add(updateButton);
 		add(findButton);
 		add(deleteButton);
-		add(clearButton);
 
 
 	}

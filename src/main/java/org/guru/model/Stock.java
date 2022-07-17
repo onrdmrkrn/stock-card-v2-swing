@@ -205,30 +205,30 @@ public class Stock {
 		return stockList;
 	}
 
-	public void updateSqlSentence (Stock entity){
+	public void updateSqlSentence (){
 		Connection connection = SingletonConnection.getConnection();
 
 
 		try {
 			Statement statement = connection.createStatement();
 			statement.executeUpdate("UPDATE stock_entity SET stockName='"
-					+entity.getStockName()
+					+getStockName()
 					+"', stockDescription='"
-					+entity.getStockDescription()
+					+getStockDescription()
 					+"',stockCode='"
-					+entity.getStockCode()
+					+getStockCode()
 					+"', unit='"
-					+entity.getUnit()
+					+getUnit()
 					+"',barcode='"
-					+entity.getBarcode()
+					+getBarcode()
 					+"', kdv="
-					+entity.getKdv()
+					+getKdv()
 					+", price="
-					+entity.getPrice()
+					+getPrice()
 					+",stockType = "
-					+entity.getStockType()
+					+getStockType()
 					+" WHERE stockId= "
-					+entity.getStockId()
+					+getStockId()
 					+"");
 
 
@@ -239,20 +239,19 @@ public class Stock {
 		}
 	}
 
-	public Stock deleteSqlSentence (Stock entity){
+	public void deleteSqlSentence (){
 		Stock stock = new Stock();
 		Connection connection = SingletonConnection.getConnection();
 
 		try {
 			Statement statement = connection.createStatement();
-			statement.executeUpdate("DELETE  FROM stock_entity WHERE stockId = "+entity.getStockId()+"");
+			statement.executeUpdate("DELETE  FROM stock_entity WHERE stockId = "+getStockId()+"");
 
 
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
 
-		return stock;
 	}
 
 	public List<Stock> getAllSqlSentence(){
@@ -289,31 +288,31 @@ public class Stock {
 		return productList;
 	}
 
-	public void insertSqlSentence(Stock entity){
+	public void insertSqlSentence(){
 		Connection connection = SingletonConnection.getConnection();
 		try {
 			Statement statement = connection.createStatement();
 			statement.executeUpdate("INSERT INTO stock_entity  (stockName, unit,stockCode, barcode, stockDescription,createdDate,stockType,kdv,stockId,price) "
 					+"VALUES('"
-					+ entity.getStockName()
+					+ getStockName()
 					+"','"
-					+ entity.getUnit()
+					+ getUnit()
 					+ "','"
-					+entity.getStockCode()
+					+getStockCode()
 					+"','"
-					+entity.getBarcode()
+					+getBarcode()
 					+"','"
-					+entity.getStockDescription()
+					+getStockDescription()
 					+"','"
-					+entity.getCreatedDate()
+					+getCreatedDate()
 					+"',"
-					+entity.getStockType()
+					+getStockType()
 					+","
-					+entity.getKdv()
+					+getKdv()
 					+","
-					+entity.getStockId()
+					+getStockId()
 					+","
-					+entity.getPrice()
+					+getPrice()
 					+")");
 
 		} catch (SQLException e) {

@@ -27,7 +27,9 @@ public class SaveButtonCommand implements Command {
         stock.setPrice(stockUI.getPrice());
         stock.setStockType(stockUI.getStockType());
         stock.setUnit(stockUI.getUnit());
-        stock.insertSqlSentence(stock);
+        stock.insertSqlSentence();
+
+        stockUI.clear();
 
         JOptionPane.showMessageDialog(null,stock.getStockName()+" added.");
 

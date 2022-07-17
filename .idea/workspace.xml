@@ -4,7 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cd2e090b-8065-450f-bc32-a0c673f58cae" name="Changes" comment="" />
+    <list default="true" id="cd2e090b-8065-450f-bc32-a0c673f58cae" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/guru/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/guru/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/guru/command/ClearButtonCommand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/guru/command/DeleteButtonCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/guru/command/DeleteButtonCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/guru/command/SaveButtonCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/guru/command/SaveButtonCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/guru/command/UpdateButtonCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/guru/command/UpdateButtonCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/guru/controller/StockFrameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/guru/controller/StockFrameController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/guru/model/Stock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/guru/model/Stock.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/guru/view/StockUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/guru/view/StockUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stock_card_v2_hib.iml" beforeDir="false" afterPath="$PROJECT_DIR$/stock_card_v2_hib.iml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -105,6 +116,8 @@
       <workItem from="1657889088215" duration="1992000" />
       <workItem from="1657904324026" duration="8687000" />
       <workItem from="1657982236264" duration="5766000" />
+      <workItem from="1657989085644" duration="972000" />
+      <workItem from="1658047350364" duration="2197000" />
     </task>
     <servers />
   </component>
@@ -127,7 +140,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/guru/view/StockUI.java</url>
-          <line>68</line>
+          <line>80</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>

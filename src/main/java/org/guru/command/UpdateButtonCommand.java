@@ -28,7 +28,9 @@ public class UpdateButtonCommand implements Command{
         stock.setPrice(stockUI.getPrice());
         stock.setStockType(stockUI.getStockType());
         stock.setUnit(stockUI.getUnit());
-        stock.updateSqlSentence(stock);
+        stock.updateSqlSentence();
+
+        stockUI.clear();
 
         JOptionPane.showMessageDialog(null,stock.getStockName()+" updated.");
 

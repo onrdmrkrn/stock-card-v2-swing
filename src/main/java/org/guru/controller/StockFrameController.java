@@ -27,8 +27,7 @@ public class StockFrameController {
         stockUI.updateButton.addActionListener(new GeneralAction(new UpdateButtonCommand(stockUI)));
         stockUI.findButton.addActionListener(new GeneralAction(new FindButtonCommand(stockUI)));
         stockUI.deleteButton.addActionListener(new GeneralAction(new DeleteButtonCommand(stockUI)));
-        stockUI.clearButton.addActionListener(new GeneralAction(new ClearButtonCommand(stockUI)));
-        mainWindow.setVisible(true);
+
         stockUI.setLayout(new GridLayout(14,6));
 
     }
